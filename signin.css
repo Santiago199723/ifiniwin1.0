@@ -15,15 +15,53 @@
     * {
       margin: 0;
       padding: 0;
-      font-family: 'Dancing Script', cursive, sans-serif;
+      font-family: 'Dancing Script', sans-serif;
     }
 
-    /* Estilo do cabeçalho "Entrar" */
-    h1 {
+     /* Estilo do cabeçalho "Entrar" */
+     h1 {
       text-align: center;
       margin-bottom: 20px;
       color: #4bee2b !important; /* Corrigido para verde mais claro */
       font-family: 'Dancing Script', cursive, sans-serif;
+    }
+
+    /* Estilo do corpo da página */
+    body {
+      background-image: url("bg-signin.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo do contêiner principal */
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      margin-top: 20px;
+    }
+
+    /* Estilo do cartão de login */
+    .card {
+      border: 4px solid #7cc713; /* Cor da borda */
+      border-radius: 10px; /* Borda arredondada */
+      padding: 20px; /* Espaçamento interno */
+      box-shadow: 0 0 22px 6px #6ef062; /* Adicionando um efeito de sombra */
+    }
+
+    /* Estilo do subtítulo "Entrar" no cartão */
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #4bee2b !important; /* Corrigido para verde mais claro */
+      font-family: 'Dancing', cursive;
     }
 
     /* Estilo do campo de entrada de texto */
@@ -109,13 +147,6 @@
       width: 60%;
     }
 
-    .card {
-      border: 4px solid #7cc713; /* Cor da borda */
-      border-radius: 10px; /* Borda arredondada */
-      padding: 20px; /* Espaçamento interno */
-      box-shadow: 0 0 22px 6px #6ef062; /* Adicionando um efeito de sombra */
-    }
-
     /* Estilo do parágrafo abaixo do botão */
     p {
       color: #46df53; /* Verde mais claro */
@@ -154,18 +185,40 @@
       border-radius: 4px;
       display: none;
     }
-
-    /* Estilo da imagem de fundo */
-    body {
-      background-image: url('caminho/para/sua/imagem.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh; /* Define a altura da imagem como 100% da altura da tela */
-      overflow: hidden; /* Impede a rolagem vertical */
-    }
   </style>
+  <title>MEGA FLUXO OB</title>
 </head>
 <body>
-  <!-- Seu conteúdo HTML aqui -->
+  <div class="container">
+    <div class="card">
+      <h1>Entrar</h1>
+
+      <div id="msgError"></div>
+
+      <div class="label-float">
+        <input type="text" id="usuario" placeholder="" required />
+        <label id="userLabel" for="usuario">Usuario</label>
+      </div>
+
+      <div class="label-float">
+        <input type="password" id="senha" placeholder="" required />
+        <label id="senhaLabel" for="senha">Senha</label>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+
+      <div class="justify-center">
+        <button onclick="entrar()">Entrar</button>
+      </div>
+
+      <div class="justify-center">
+        <hr />
+      </div>
+
+      <p>
+        Não tem uma conta?
+        <a href="https://t.me/suporte_quotexGain" target="_blank">Pedir acesso</a>
+      </p>
+    </div>
+  </div>
 </body>
 </html>
