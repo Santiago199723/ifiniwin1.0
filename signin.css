@@ -15,47 +15,15 @@
     * {
       margin: 0;
       padding: 0;
-      font-family: 'Dancing Script', ;
-    }
-
-
-     /* Estilo do cabeçalho "Entrar" */
-  .login-header {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #4bee2b !important; /* Corrigido para verde mais claro */
-    font-family: 'Dancing Script', cursive, sans-serif;
-  }
-
-  /* Estilo específico para a palavra "Login" */
-  .login-header {
-    font-family: 'Roboto', sans-serif; /* Substitua 'Roboto' pela fonte desejada */
-  }
-
-     /* Estilo do cabeçalho "Entrar" */
-     h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #4bee2b !important; /* Corrigido para verde mais claro */
       font-family: 'Dancing Script', cursive, sans-serif;
     }
-    
-    /* Estilo específico para a palavra "Login" */
-    .login-header {
-      font-family: 'Roboto', sans-serif; /* Substitua 'Nova Fonte' pela fonte desejada */
-    }
-    
 
-   
-
-
-
-    /* Estilo do subtítulo "Entrar" no cartão */
+    /* Estilo do cabeçalho "Entrar" */
     h1 {
       text-align: center;
       margin-bottom: 20px;
       color: #4bee2b !important; /* Corrigido para verde mais claro */
-      font-family: 'Dancing', cursive;
+      font-family: 'Dancing Script', cursive, sans-serif;
     }
 
     /* Estilo do campo de entrada de texto */
@@ -147,10 +115,6 @@
       padding: 20px; /* Espaçamento interno */
       box-shadow: 0 0 22px 6px #6ef062; /* Adicionando um efeito de sombra */
     }
-    
-    
-    
-    
 
     /* Estilo do parágrafo abaixo do botão */
     p {
@@ -190,6 +154,18 @@
       border-radius: 4px;
       display: none;
     }
+
+    /* Estilo da imagem de fundo */
+    body {
+      background-image: url('caminho/para/sua/imagem.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Define a altura da imagem como 100% da altura da tela */
+      overflow: hidden; /* Impede a rolagem vertical */
+    }
   </style>
-  
+</head>
+<body>
+  <!-- Seu conteúdo HTML aqui -->
+</body>
 </html>
